@@ -1,0 +1,47 @@
+
+.cercle{
+    background: $vert;
+    border-radius: 200px;
+    color: white;
+    height: 84px;
+    font-weight: bold;
+    width: 85px;
+    display: table;
+    margin: 20px auto;
+    text-align:center;
+}
+
+.text-cercle{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.wrapper-event{
+    padding: 30px 0px 0px 20px;
+}
+
+.title-event{
+    @include font-size(20px);
+    color: black;
+    &:hover{
+        color:$vert;
+        text-decoration: none;
+    }
+}
+
+.subtitle-event{
+    color:$gris;
+    font-size: 14px;
+}
+.date-day{
+    font-size: 28px;
+    font-weight: lighter;
+}
+.text-white{
+    font-weight: lighter;
+    font-size: 12px;
+}
+.brxsmall { 
+    display: block; 
+    margin-bottom: -.6em; 
+}

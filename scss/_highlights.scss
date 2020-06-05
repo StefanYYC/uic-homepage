@@ -1,0 +1,31 @@
+.title-highlights {
+  letter-spacing: 2px;
+  color: $gris;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.link-highlights {
+  color: black;
+  &:hover {
+    color: $bleu;
+    text-decoration: none;
+  }
+  font-size: 16px;
+}
+
+.ul-arrow {
+  position: relative;
+  list-style: none;
+}
+.li-arrow::before {
+  content: "→";
+  position: absolute;
+  margin-top: -9px;
+  left: 5px;
+  color: $bleu;
+  font-size: 25px;
+}
+#one::before {
+  padding-top: 10px;
+}

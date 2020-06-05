@@ -1,0 +1,15 @@
+{
+  "name": "maquette",
+  "version": "1.0.0",
+  "description": "Maquette responsive ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Stefan",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "rfs": "^9.0.3"
+  }
+}
