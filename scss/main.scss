@@ -11,9 +11,11 @@
 *{
     margin:0;
 }
-body {
+html,body {
     background-color: $bg-grey;
-    height: 100%;
+    min-height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .color-blue{
