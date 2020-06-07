@@ -3,6 +3,11 @@
   padding: 0 7em 0 7em;
 }
 
+.logo-brand{
+  width:100px;
+  height:50px;
+}
+
 .brand-name {
   font-size: 25px;
 }
@@ -15,4 +20,18 @@
 
 .search-bar {
   width: 300px !important;
+}
+// Si le screen est de 600px ou en dessous
+@media screen and (max-width: 600px) {
+  .brand-name{
+    font-size:20px;
+  }
+  .logo-brand{
+    width:60px;
+    height:50px;
+  }
+  .search-bar{
+    width: 200px !important;
+  }
+  
 }

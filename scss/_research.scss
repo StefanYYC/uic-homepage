@@ -1,55 +1,147 @@
-.title-research{
-    color:white;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    background-color: $vert;
-}
-.btn-recherche{
-    background-color: $bleu;
-    border-color: $bleu;
-    height: 50px ;
-    width: 200px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 35px;
+.title-research {
+  color: white;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  background-color: $vert;
 }
 
-.border-black{
-    border-left: 1px solid $gris;
-    border-right: 1px solid  $gris;
-    border-bottom: 1px solid $gris ;
-}
-.select-title{
-    font-weight: normal;
-}
-
-#result-threat{
-    visibility: hidden;
-    margin-top: 5px;
-    border: 2px solid $vert;
-    border-radius: 10px;
-    background-color: $vert;
+.btn-recherche {
+  background-color: $bleu;
+  border-color: $bleu;
+  width: 200px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 35px;
+  font-weight: lighter;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
 
-#result-solution{
-    margin-top: 5px;
-    border: 2px solid $vert;
-    border-radius: 10px;
-    background-color: $vert;
+.border-black {
+  border-left: 1px solid $gris;
+  border-right: 1px solid $gris;
+  border-bottom: 1px solid $gris;
 }
-.cross{
-    font-weight: bold;
-}
-
-.names{
-    width: 20% !important;
+.select-title {
+  font-weight: normal;
 }
 
-.violence{
-    width:60%;
+#result-threat {
+  visibility: hidden;
+  margin-top: 5px;
+  border: 2px solid $vert;
+  border-radius: 15px;
+  background-color: $vert;
+  padding: 1px 2px 1px 5px;
+  color: white;
+  position: absolute;
+  bottom: -40px;
 }
 
-.pickpocket{
+#result-solution {
+  visibility: hidden;
+  margin-top: 5px;
+  border: 2px solid $vert;
+  border-radius: 10px;
+  background-color: $vert;
+  padding: 1px 2px 1px 5px;
+  color: white;
+  position: absolute;
+  bottom: -40px;
+}
+.cross {
+  font-weight: bold;
+}
+.cross-link {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.names {
+  width: 17%;
+}
+
+.violence {
+  width: 38%;
+}
+
+.pickpocket {
+  width: 25%;
+}
+
+.procedures {
+  width: 20%;
+}
+.human {
+  width: 25%;
+}
+.organisation {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .recherche {
+    height: 400px;
+    max-height: 400px;
+  }
+  .deuxieme-select {
+    padding-top: 4em;
+  }
+  .pickpocket {
     width: 50%;
+  }
+  .violence {
+    width: 80%;
+  }
+
+  .procedures {
+    width: 40%;
+  }
+  .organisation {
+    width: 90%;
+  }
+  .human {
+    width: 50%;
+  }
+  .names {
+    width: 34%;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media screen and (max-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 1024px) {
+  .recherche {
+    height: 260px;
+    max-height: 260px;
+  }
+  #select-threat {
+    border-left: 1px solid $gris;
+  }
+  .pickpocket {
+    width: 50%;
+  }
+  .violence {
+    width: 70%;
+  }
+  .procedures {
+    width: 40%;
+  }
+  .organisation {
+    width: 80%;
+  }
+  .human {
+    width: 45%;
+  }
+  .names {
+    width: 30%;
+  }
 }

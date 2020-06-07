@@ -8,7 +8,8 @@
 
 .text-carousel-header {
   padding: 25px 0 0 20px;
-  color: white;
+  color: black;
+  clip: auto;
 }
 
 .carousel-indicators {
@@ -27,5 +28,31 @@
     text-transform: uppercase;
     padding-right: 20px;
     letter-spacing: 2px;
-    @include font-size(20px);
+    font-size: 20px;
+}
+
+.more{
+  color:white;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .title-carousel{
+    padding-right:3px;
+    letter-spacing: 0px;
+    font-size: 15px;
+  }
+  .carousel-indicators {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media screen and (max-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (max-width: 1024px) {
 }
