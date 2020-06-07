@@ -54,7 +54,8 @@
 .cross {
   font-weight: bold;
 }
-.cross-link, .cross-result {
+.cross-link,
+.cross-result {
   color: white;
   text-decoration: none;
   &:hover {
@@ -114,7 +115,17 @@
   }
 }
 // Medium devices (tablets, 768px and up)
-@media screen and (max-width: 768px) {
+@media screen and (width: 768px) {
+  .recherche {
+    height: 300px;
+    max-height: 300px;
+  }
+  .logo-prefooter {
+    margin-left: 4em !important;
+  }
+  .list-logo {
+    margin-right: 8em !important;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -125,7 +136,7 @@
   }
 }
 
-@media screen and(max-width:1024px){
+@media screen and(max-width:1024px) {
   #select-threat {
     border-left: 1px solid $gris;
   }

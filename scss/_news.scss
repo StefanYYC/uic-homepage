@@ -46,6 +46,13 @@
   text-decoration: underline;
 }
 
+// for Ipad
+@media screen and (width: 768px) {
+  .text-overlay {
+    width: 95% !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .title-carousel {
     padding-right: 3px;

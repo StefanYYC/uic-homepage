@@ -145,10 +145,12 @@
 .cross {
   font-weight: bold; }
 
-.cross-link, .cross-result {
+.cross-link,
+.cross-result {
   color: white;
   text-decoration: none; }
-  .cross-link:hover, .cross-result:hover {
+  .cross-link:hover,
+  .cross-result:hover {
     color: black;
     text-decoration: none; }
 
@@ -188,6 +190,15 @@
     width: 50% !important; }
   .names {
     width: 34% !important; } }
+
+@media screen and (width: 768px) {
+  .recherche {
+    height: 300px;
+    max-height: 300px; }
+  .logo-prefooter {
+    margin-left: 4em !important; }
+  .list-logo {
+    margin-right: 8em !important; } }
 
 @media screen and (min-width: 1024px) {
   .recherche {
@@ -281,6 +292,10 @@
 .link-overlay {
   color: white;
   text-decoration: underline; }
+
+@media screen and (width: 768px) {
+  .text-overlay {
+    width: 95% !important; } }
 
 @media screen and (max-width: 600px) {
   .title-carousel {
