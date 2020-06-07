@@ -29,12 +29,11 @@ $("#select-threat").on("change", function () {
   }
 
   $("#result-threat").css("visibility", "visible");
-
   $("#result-threat").html(
     $(this).val() +
-      '<a href="#" class="cross-link"><span class="cross"> &#10005</span></a>'
+      '<a href="#" class="cross-result"><span class="cross"> &#10005</span></a>'
   );
-  $(".cross-link").on("click", function () {
+  $(".cross-result").on("click", function () {
     $("#result-threat").css("visibility", "hidden");
   });
 });

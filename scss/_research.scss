@@ -54,7 +54,7 @@
 .cross {
   font-weight: bold;
 }
-.cross-link {
+.cross-link, .cross-result {
   color: white;
   text-decoration: none;
   &:hover {
@@ -97,20 +97,20 @@
     width: 50%;
   }
   .violence {
-    width: 80%;
+    width: 80% !important;
   }
 
   .procedures {
     width: 40%;
   }
   .organisation {
-    width: 90%;
+    width: 85% !important;
   }
   .human {
-    width: 50%;
+    width: 50% !important;
   }
   .names {
-    width: 34%;
+    width: 34% !important;
   }
 }
 // Medium devices (tablets, 768px and up)
@@ -123,6 +123,9 @@
     height: 260px;
     max-height: 260px;
   }
+}
+
+@media screen and(max-width:1024px){
   #select-threat {
     border-left: 1px solid $gris;
   }

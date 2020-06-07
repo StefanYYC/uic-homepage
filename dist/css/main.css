@@ -34,7 +34,7 @@
 
 .text-carousel-header {
   padding: 25px 0 0 20px;
-  color: black;
+  color: white;
   clip: auto; }
 
 .carousel-indicators {
@@ -145,10 +145,10 @@
 .cross {
   font-weight: bold; }
 
-.cross-link {
+.cross-link, .cross-result {
   color: white;
   text-decoration: none; }
-  .cross-link:hover {
+  .cross-link:hover, .cross-result:hover {
     color: black;
     text-decoration: none; }
 
@@ -179,20 +179,22 @@
   .pickpocket {
     width: 50%; }
   .violence {
-    width: 80%; }
+    width: 80% !important; }
   .procedures {
     width: 40%; }
   .organisation {
-    width: 90%; }
+    width: 85% !important; }
   .human {
-    width: 50%; }
+    width: 50% !important; }
   .names {
-    width: 34%; } }
+    width: 34% !important; } }
 
 @media screen and (min-width: 1024px) {
   .recherche {
     height: 260px;
-    max-height: 260px; }
+    max-height: 260px; } }
+
+@media screen and (max-width: 1024px) {
   #select-threat {
     border-left: 1px solid #7a898e; }
   .pickpocket {
@@ -406,7 +408,7 @@
     height: 30px;
     width: 30px; }
   .list-logo {
-    margin-left: 4em; }
+    margin-right: 9em; }
   .logo-prefooter {
     width: 300px;
     height: 165px;
@@ -414,7 +416,9 @@
 
 @media screen and (max-width: 1024px) {
   .list-logo {
-    margin-left: 8em; } }
+    margin-left: 8em; }
+  .list-logo img {
+    margin-bottom: 2em; } }
 
 html,
 body {

@@ -22,29 +22,29 @@
   height: 40px;
   width: 40px;
 }
+
 @media screen and (max-width: 600px) {
   .list-logo img {
     height: 30px;
     width: 30px;
   }
   .list-logo {
-    margin-left: 4em;
+    margin-right: 9em;
   }
+  
   .logo-prefooter {
     width: 300px;
     height: 165px;
     margin-left: 3em;
   }
-  
-}
-// Medium devices (tablets, 768px and up)
-@media screen and (max-width: 768px) {
-  
 }
 
 // Large devices (desktops, 992px and up)
 @media screen and (max-width: 1024px) {
-  .list-logo {
+  .list-logo{
     margin-left: 8em;
+  }
+  .list-logo img{
+    margin-bottom: 2em;
   }
 }
