@@ -11,6 +11,9 @@
   <!-- Font Awesome -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Select List-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
   <!-- My CSS -->
   <link rel="stylesheet" href="./css/main.css">
   <title>UIC</title>
@@ -20,7 +23,7 @@
   <!-- Début navbar -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="./img/UIC-logo.png" width="100" height="50"
           class="d-inline-block align-top bg-white" alt="UIC Logo">
         <span class="brand-name">SECURITY HUB</span></a>
@@ -47,7 +50,7 @@
   <!-- Fin navbar-->
 
   <!-- Carousel -->
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <div class="carousel slide position-relative" id="carousel-header" data-ride="carousel">
@@ -74,33 +77,53 @@
       </div>
     </div>
   </div>
+  </div>
   <!-- Fin carousel -->
 
   <!-- Recherche Security -->
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-7 my-4">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h2 class="card-title">Post Title</h2>
-            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,
-              nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus
-              possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
-          <div class="card-footer text-muted text-right">
-            Posted on January 1, 2017 by
-            <a href="#">Start Bootstrap</a>
-          </div>
+      <div class="col-md-9 my-4">
+        <div class="card mb-4 border-0">
+          <h5 class="card-header title-research">QUICK SEARCH FOR SECURITY SOLUTIONS</h5>
+            <div class="card-body border-black">
+              <div class="row">
+                <div class="col-md-6">
+                  <h6 class="select-title">Select a threat :</h6>
+                  <select name ="Threats" id="select-threat">
+                    <option value="Violence against people" selected ="selected">Violence against people</option>
+                    <option value="Pickpocketing"> Pickpocketing</option>
+                    <option value="Name 2"> Name2</option>
+                    <option value="Name 3"> Name3</option>
+                    <option value="Others"> Others</option>
+                  </select>
+                  <div id="result-threat"></div>
+                </div>
+                <div class="col-md-6">
+                  <h6 class="select-title">Select a type of solutions :</h6>
+                  <select name ="Solutions" id="select-solution">
+                    <option id="org" value="Organisation and procedures" selected ="selected"> Organisation and procedures</option>
+                    <option id="procedures" value="Procedures"> Procedures</option>
+                    <option value="Human Factor"> Human Factor</option>
+                    <option value="Name 3"> Name3</option>
+                    <option value="Name 4"> Name4</option>
+                  </select>
+                  <div id="result-solution"></div>
+                </div>
+              </div>
+              <div class="text-right">
+                <button class="btn btn-primary btn-recherche"><i class="fa fa-search icon"></i>Quick search</button>
+              </div>
+            </div>
+
         </div>
       </div>
 
       <!-- Fin Recherche Security -->
 
       <!-- Highlights -->
-      <div class="col-md-5">
-        <div class="card my-4">
+      <div class="col-md-3">
+        <div class="card my-4 border-0">
           <div class="card-body">
             <h5 class="card-title title-highlights">HIGHLIGHTS</h5>
             <div class="row">
@@ -127,175 +150,191 @@
           </div>
         </div>
       </div>
-      <!-- Fin container Recherche + Higlights-->
-      <!-- Fin Highlights-->
+    </div>
+  </div>
+  <!-- Fin container Recherche + Higlights-->
+  <!-- Fin Highlights-->
 
 
-      <!-- Triple Card News + Events + Twitter -->
-      <div class="container">
-        <div class="row">
-          <!-- News -->
-          <div class="col-md-4">
-            <div class="card my-4">
-              <div class="card-body">
-                <h5 class="card-title title-highlights">News</h5>
-                <div class="row">
-                  <div class="col-md-12 position-relative pt-2">
-                    <img class="card-img" src="./img/train-1.jpg"></img>
-                    <div class="text-overlay">
-                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos nostrum
-                        voluptatibus nihil earum quia... <a href="" class="link-overlay">see more</a></div>
-                    </div>
-                    <div class="top-left">Title of the news</div>
-                  </div>
+  <!-- Triple Card News + Events + Twitter -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- News -->
+      <div class="col-md-4">
+        <div class="card my-4 border-0">
+          <div class="card-body">
+            <h5 class="card-title title-highlights">News</h5>
+            <div class="row">
+              <div class="col-md-12 position-relative pt-2">
+                <img class="card-img train-img" src="./img/train-1.jpg"></img>
+                <div class="text-overlay">
+                  <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos nostrum
+                    voluptatibus nihil earum quia... <a href="" class="link-overlay">see more</a></div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12 mb-2 position-relative pt-2">
-                    <img class="card-img train-img" src="./img/train-2.jpg"></img>
-                    <div class="text-overlay">
-                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos nostrum
-                        voluptatibus nihil earum quia... <a href="" class="link-overlay">see more</a></div>
-                    </div>
-                    <div class="top-left">Title of the news</div>
-                  </div>
-                </div>
-                <div class="text-right">
-                  <a href="#" class="see-all">See all</a>
-                </div>
+                <div class="top-left">Title of the news</div>
               </div>
             </div>
-          </div>
-          <!-- Fin News -->
-
-          <!-- Events -->
-          <div class="col-md-4">
-            <div class="card my-4">
-              <div class="card-body">
-                <h5 class="card-title title-highlights">Events</h5>
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="cercle">
-                      <div class="text-cercle"><span class="brxsmall"></span>
-                        <span class="date-day">12</span><span class="brxsmall"></span>
-                        <span class="text-white">Feb 2018</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="wrapper-event">
-                      <p><a href="" class="title-event">Title of the event</a><br>
-                        <img src="./img/location-512.webp" class="icon"><span class="subtitle-event">Location</span>
-                      </p>
-                    </div>
-                  </div>
+            <div class="row">
+              <div class="col-md-12 mb-2 position-relative pt-2">
+                <img class="card-img train-img" src="./img/train-2.jpg"></img>
+                <div class="text-overlay">
+                  <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos nostrum
+                    voluptatibus nihil earum quia... <a href="" class="link-overlay">see more</a></div>
                 </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="cercle">
-                      <div class="text-cercle"><span class="brxsmall"></span>
-                        <span class="date-day">12</span><span class="brxsmall"></span>
-                        <span class="text-white">Feb 2018</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="wrapper-event">
-                      <p><a href="" class="title-event">Title of the event</a><br>
-                        <img src="./img/location-512.webp" class="icon"><span class="subtitle-event">Location</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="cercle">
-                      <div class="text-cercle"><span class="brxsmall"></span>
-                        <span class="date-day">12</span><span class="brxsmall"></span>
-                        <span class="text-white">Feb 2018</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="wrapper-event">
-                      <p><a href="" class="title-event">Title of the event</a><br>
-                        <img src="./img/location-512.webp" class="icon"><span class="subtitle-event">Location</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="text-right">
-                  <a href="#" class="see-all">See all</a>
-                </div>
+                <div class="top-left">Title of the news</div>
               </div>
             </div>
-          </div>
-          <!-- Fin Events -->
-          <!-- Début Twitter -->
-          <div class="col-md-4">
-            <div class="card my-4">
-              <a class="twitter-timeline" data-width="472" data-height="473" data-theme="light"
-                href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="text-right">
+              <a href="#" class="see-all">See all</a>
             </div>
           </div>
-          <!-- Fin Twitter -->
         </div>
       </div>
-      <!-- Fin News + Events + Twitter -->
+      <!-- Fin News -->
 
-      <!-- Quick access -->
-      <div class="container my-4 section-blue">
-        <div class="row">
-          <div class="col-md-12 my-4">
-            <h3 class="text-center title-access">QUICK ACCESS</h3>
-            <ul class="list-inline text-center">
-              <div class="list-inline-item mx-5 mt-4"><img class="icon-access" src="./img/phone-book.png">
-                <p class="text-access">User contact directory</p>
+      <!-- Events -->
+      <div class="col-md-4">
+        <div class="card my-4 border-0">
+          <div class="card-body">
+            <h5 class="card-title title-highlights">Events</h5>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="cercle">
+                  <div class="text-cercle"><span class="brxsmall"></span>
+                    <span class="date-day">12</span><span class="brxsmall"></span>
+                    <span class="text-white">Feb 2018</span>
+                  </div>
+                </div>
               </div>
-              <div class="list-inline-item mx-5 mt-4"><img class="icon-access" src="./img/networking.png">
-                  <p class="text-access">Working group</p>
-              
+              <div class="col-md-9">
+                <div class="wrapper-event">
+                  <p><a href="" class="title-event">Title of the event</a><br>
+                    <img src="./img/location-512.webp" class="icon"><span class="subtitle-event">Location</span>
+                  </p>
+                </div>
               </div>
-              <div class="list-inline-item mx-5 mt-4"><img class="icon-access" src="./img/dictionary.png">
-                <p class="text-access">Glossary</p>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="cercle">
+                  <div class="text-cercle"><span class="brxsmall"></span>
+                    <span class="date-day">12</span><span class="brxsmall"></span>
+                    <span class="text-white">Feb 2018</span>
+                  </div>
+                </div>
               </div>
-              <div class="list-inline-item mx-5 mt-4"><img class="icon-access" src="./img/email.png">
-                <p class="text-access">Contact us</p>
+              <div class="col-md-9">
+                <div class="wrapper-event">
+                  <p><a href="" class="title-event">Title of the event</a><br>
+                    <img src="./img/location-512.webp" class="icon"><span class="subtitle-event">Location</span>
+                  </p>
+                </div>
               </div>
-              <div class="list-inline-item mx-5 mt-4"><img class="icon-access"
-                  src="./img/web-mark-as-favorite-star.png">
-                <p class="text-access">Bookmarks</p>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="cercle">
+                  <div class="text-cercle"><span class="brxsmall"></span>
+                    <span class="date-day">12</span><span class="brxsmall"></span>
+                    <span class="text-white">Feb 2018</span>
+                  </div>
+                </div>
               </div>
-            </ul>
+              <div class="col-md-9">
+                <div class="wrapper-event">
+                  <p><a href="" class="title-event">Title of the event</a><br>
+                    <img src="./img/location-512.webp" class="icon"><span class="subtitle-event">Location</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <a href="#" class="see-all">See all</a>
+            </div>
           </div>
         </div>
+      </div>
+      <!-- Fin Events -->
+      <!-- Début Twitter -->
+      <div class="col-md-4">
+        <div class="card my-4 border-0">
+          <a class="twitter-timeline" data-width="472" data-height="473" data-theme="light"
+            href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <!-- Fin Twitter -->
+    </div>
+  </div>
+  <!-- Fin News + Events + Twitter -->
+
+  <!-- Quick access -->
+  <div class="container-fluid my-4 section-blue">
+    <div class="row">
+      <div class="col-md-12 my-4">
+        <h3 class="text-center title-access">QUICK ACCESS</h3>
+        <ul class="list-inline text-center">
+          <div class="list-inline-item mx-5 mt-4"><img class="icon-access" src="./img/phone-book.png">
+            <p class="text-access">User contact directory</p>
+          </div>
+          <div class="list-inline-item mx-5 mt-4"><img class="icon-access" src="./img/networking.png">
+            <p class="text-access">Working group</p>
+
+          </div>
+          <div class="list-inline-item mx-5 mt-4"><img class="icon-access" src="./img/dictionary.png">
+            <p class="text-access">Glossary</p>
+          </div>
+          <div class="list-inline-item mx-5 mt-4"><img class="icon-access" src="./img/email.png">
+            <p class="text-access">Contact us</p>
+          </div>
+          <div class="list-inline-item mx-5 mt-4"><img class="icon-access" src="./img/web-mark-as-favorite-star.png">
+            <p class="text-access">Bookmarks</p>
+          </div>
+        </ul>
       </div>
     </div>
   </div>
 
 
 
+  <!-- Pre footer -->
+  <div class="container-fluid bg-white margin-6">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="./img/logo_couleur.jpg" class="logo-prefooter">
+      </div>
+      <div class="col-md-6">
+        <div class="container text-right">
+          <ul class="list-inline list-logo">
+            <div class="list-inline-item center-logo"><img src="./img/twitter.png"></div>
+            <div class="list-inline-item center-logo"><img src="./img/linkedin.png"></div>
+            <div class="list-inline-item center-logo"><img src="./img/facebook.png"></div>
+            <div class="list-inline-item center-logo"><img src="./img/youtube.png"></div>
+            <div class="list-inline-item center-logo"><img src="./img/pinterest.png"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Pre footer -->
+
+
+
   <!-- Footer -->
-  <!-- <footer id="footer">
+  <footer id="footer">
     <div class="container text-center">
-      <ul class="list-inline">
-        <div class="list-inline-item"><a href="#" class="footer-link">ABOUT UIC</a></div>
+      <ul class="list-inline centered-link">
+        <div class="list-inline-item"><a href="#" class="footer-link" id="about-responsive">ABOUT UIC</a></div>
         <div class="list-inline-item"><span class="footer-link">-</span></div>
         <div class="list-inline-item"><a href="#" class="footer-link">LEGAL NOTICE</a></div>
-        <div class="list-inline-item"><span class="footer-link">-</span></div>
+        <div class="list-inline-item"><span class="footer-link" id="dash-responsive">-</span></div>
         <div class="list-inline-item"><a href="#" class="footer-link">TERMS OF USE</a></div>
         <div class="list-inline-item"><span class="footer-link">-</span></div>
         <div class="list-inline-item"><a href="#" class="footer-link">CONTACT</a></div>
       </ul>
     </div>
-  </footer> -->
+  </footer>
 
-
-
-
-
-
-  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -306,6 +345,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+  <script src="./js/select.js"></script>
 </body>
 
 </html>
