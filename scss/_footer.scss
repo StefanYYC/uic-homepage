@@ -1,13 +1,38 @@
-#footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 3rem;
-    background-color: $gris;
+#footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: $gris;
 }
 
-.footer-link{
-    color:white;
-    position: relative;
-    top:10px;
+.footer-link {
+  color: white;
+  position: relative;
+  top: 10px;
+}
+
+.centered-link{
+    padding-top: 11px;
+}
+
+// Si le screen est de 600px ou en dessous
+@media screen and (max-width: 600px) {
+    #footer{
+        height: 4em;
+    }
+    #about-responsive{
+        margin-left: 30px;
+    }
+    #dash-responsive{
+        visibility: hidden;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media screen and (max-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (max-width: 1024px) {
 }
